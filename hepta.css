@@ -331,10 +331,12 @@ hr{
 }
 
 .management p {
-    font-size: 15px;
+    font-size: 20px;
     font-weight: lighter;
     font-family:'Mukta Mahee', 'Arial', sans-serif; 
     margin-top: 20px;
+    line-height: 1.45;
+    color: #565656;
 }
 
 
@@ -678,6 +680,7 @@ input[type="radio"] {
   align-items: center;
   justify-content: center;
   z-index: 2;
+  margin-top: -80px;
 }
 
 .slider {
@@ -695,6 +698,7 @@ input[type="radio"] {
   width: 100%;
   height: 100%;
 }
+
 
 .slide {
   position: absolute;
@@ -750,6 +754,7 @@ input[type="radio"] {
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .nav span {
@@ -836,3 +841,113 @@ input[type="radio"] {
   border: 2px solid #fff;
 }
 
+/* .slider-container {
+  position: relative;
+  width: 1600px;
+  argin: 120px auto 120px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+  background-color: #65C0BA;
+  height: 1600px;
+/* 
+
+} */
+ 
+.blog {
+    height: 900px;
+    width: 100%;
+    background-color: #65C0BA;
+    /* position: relative; Needed for proper child positioning */
+}
+
+.blog h1 {
+    font-size: 60px;
+    color: black;
+    font-family: 'Abril Fatface', times, serif;
+    font-weight: bolder;
+    text-align: center;
+    top: 60px;
+}
+
+.blog p {
+   font-size: 20px;
+    font-weight: lighter;
+    font-family:'Mukta Mahee', 'Arial', sans-serif; 
+    margin-top: 20px;
+    line-height: 1.45;
+    color: #FFFFFFB3;
+    text-align: center;
+}
+
+.blog-posts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.blog-post {
+  background-color: white;
+  width: 335px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.blog-post img {
+  width: 100%;
+  height: 220px; /* adjust to match ratio in your design */
+  object-fit: cover;
+  display: block;
+}
+
+.post-content {
+  padding: 16px;
+}
+
+.post-content time {
+  display: block;
+  color: #777;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  font-weight: lighter;
+}
+
+.post-content h2 {
+  margin-top:15px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  margin-left: 20px;
+}
+
+.post-content p {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.4;
+  font-weight: lighter;
+
+
+}
+
+.customers {
+    height: 500px;
+    width: 100%;
+    background-color: azure;
+}
+
+.customers h1 {
+    font-size: large;
+    font-family:'Abril Fatface', times, serif;
+    font-weight: bolder;
+    align-items: center;
+    text-align: center;
+}
