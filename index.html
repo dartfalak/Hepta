@@ -114,36 +114,75 @@
       <br>there live the blind texts. Separated they live in Bookmarksgrove right at the coast 
       <br>of the Semantics, a large language ocean.</p>
 
-      <div class="carousel">
- 
-  <div class="dots">
-    <input type="radio" name="slides" id="slide1" checked>
-    <input type="radio" name="slides" id="slide2">
-    <input type="radio" name="slides" id="slide3">
-    <input type="radio" name="slides" id="slide4">
+      <body class="custom-bg">
+  <!-- Top wave (new div) -->
+  <div class="wave-top">
+    <svg viewBox="0 0 1440 100" width="100%" height="100" preserveAspectRatio="none">
+      <path d="M0,0 C480,100 960,0 1440,100 L1440,0 L0,0 Z" fill="#fff"/>
+    </svg>
   </div>
 
-  
-  <div class="slides">
-    <div class="slide s1"></div>
-    <div class="slide s2"></div>
-    <div class="slide s3"></div>
-    <div class="slide s4"></div>
-    
-    <div class="arrow arrow-left">
-      <label for="slide4" class="prev">&#10094;</label>
-      <label for="slide1" class="prev">&#10094;</label>
-      <label for="slide2" class="prev">&#10094;</label>
-      <label for="slide3" class="prev">&#10094;</label>
+     <div class="slider-container">
+  <input type="radio" name="slider" id="slide1" checked>
+  <input type="radio" name="slider" id="slide2">
+  <input type="radio" name="slider" id="slide3">
+  <input type="radio" name="slider" id="slide4">
+  <input type="radio" name="slider" id="slide5">
+  <input type="radio" name="slider" id="slide6">
+
+  <div class="slider">
+    <div class="slides">
+      <div class="slide s1">
+        <img src="hepta.png" alt="Image 1">
+      </div>
+      <div class="slide s2">
+        <img src="img.webp" alt="Image 2">
+      </div>
+      <div class="slide s3">
+        <img src="slider-3.jpg.webp" alt="Image 3">
+      </div>
+      <div class="slide s4">
+        <img src="slider-4.jpg (1).webp" alt="Image 4">
+      </div>
+      <div class="slide s5">
+        <img src="slider-5.jpg.webp" alt="Image 5">
+      </div>
+      <div class="slide s6">
+        <img src="slider-6.jpg.webp" alt="Image 6">
+      </div>
     </div>
-    <div class="arrow arrow-right">
-      <label for="slide2" class="next">&#10095;</label>
-      <label for="slide3" class="next">&#10095;</label>
-      <label for="slide4" class="next">&#10095;</label>
-      <label for="slide1" class="next">&#10095;</label>
+    <!-- Dots -->
+    <div class="dots">
+      <label for="slide1"></label>
+      <label for="slide2"></label>
+      <label for="slide3"></label>
+      <label for="slide4"></label>
+      <label for="slide5"></label>
+      <label for="slide6"></label>
     </div>
   </div>
+
+  <!-- Navigation chevrons OUTSIDE the image box -->
+  <label for="slide6" class="nav left left1"><span>&#x2039;</span></label>
+  <label for="slide2" class="nav right right1"><span>&#x203A;</span></label>
+  <label for="slide1" class="nav left left2"><span>&#x2039;</span></label>
+  <label for="slide3" class="nav right right2"><span>&#x203A;</span></label>
+  <label for="slide2" class="nav left left3"><span>&#x2039;</span></label>
+  <label for="slide4" class="nav right right3"><span>&#x203A;</span></label>
+  <label for="slide3" class="nav left left4"><span>&#x2039;</span></label>
+  <label for="slide5" class="nav right right4"><span>&#x203A;</span></label>
+  <label for="slide4" class="nav left left5"><span>&#x2039;</span></label>
+  <label for="slide6" class="nav right right5"><span>&#x203A;</span></label>
+  <label for="slide5" class="nav left left6"><span>&#x2039;</span></label>
+  <label for="slide1" class="nav right right6"><span>&#x203A;</span></label>
 </div>
-      
+
+ <div class="wave-bottom">
+    <svg viewBox="0 0 1440 100" width="100%" height="100" preserveAspectRatio="none">
+      <path d="M0,100 C480,0 960,100 1440,0 L1440,100 L0,100 Z" fill="#fff"/>
+    </svg>
+  </div>
+</body>
+
 </body>
 </html>

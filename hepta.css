@@ -339,19 +339,30 @@ hr{
 
 
 
-.carousel {
+
+.slider-container {
   position: relative;
-  width: 600px; 
-  margin: 40px auto;
+  width: 1100px;
+  margin: 60px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider {
+  position: relative;
+  width: 1100px;
+  height: 700px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  background: none;
+  border-radius: 0;
 }
 
 .slides {
   position: relative;
   width: 100%;
-  height: 400px;
-  overflow: hidden;
-  border-radius: 16px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+  height: 100%;
 }
 
 .slide {
@@ -360,88 +371,468 @@ hr{
   height: 100%;
   opacity: 0;
   transition: opacity 0.5s;
-  background-size: cover;
-  background-position: center;
-}
-
-.s1 { background-image: url("slider-1.jpg.webp"); }
-.s2 { background-image: url("slider-3.jpg.webp"); }
-.s3 { background-image: url("slider-6.jpg.webp"); }
-.s4 { background-image: url("slider-4.jpg.webp"); }
-
-
-#slide1:checked ~ .slides .s1,
-#slide2:checked ~ .slides .s2,
-#slide3:checked ~ .slides .s3,
-#slide4:checked ~ .slides .s4 {
-  opacity: 1;
-  z-index: 1;
-}
-
-
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 2;
-  width: 40px;
-  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.arrow-left { left: 10px; }
-.arrow-right { right: 10px; }
+.slide img {
+  width: 1100px;
+  height: 700px;
+  object-fit: cover;
+  border-radius: 0;
+}
 
-.arrow label {
-  font-size: 2rem;
-  color: #fff;
-  background: rgba(0,0,0,0.3);
-  border-radius: 50%;
-  padding: 8px 12px;
+input[type="radio"] {
+  display: none;
+}
+
+#slide1:checked ~ .slider .slides .s1,
+#slide2:checked ~ .slider .slides .s2,
+#slide3:checked ~ .slider .slides .s3,
+#slide4:checked ~ .slider .slides .s4,
+#slide5:checked ~ .slider .slides .s5,
+#slide6:checked ~ .slider .slides .s6 {
+  opacity: 1;
+  z-index: 1;
+}
+
+/* Navigation chevrons OUTSIDE the image box */
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3.5rem;
+  color: #333;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
   cursor: pointer;
-  margin: 0 2px;
-  transition: background 0.2s;
+  z-index: 10;
+  background: none;
+  border: none;
+  border-radius: 0;
+  opacity: 0.9;
   user-select: none;
-}
-.arrow label:hover {
-  background: rgba(0,0,0,0.6);
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#slide1:checked ~ .slides .arrow-left label[for="slide4"],
-#slide2:checked ~ .slides .arrow-left label[for="slide1"],
-#slide3:checked ~ .slides .arrow-left label[for="slide2"],
-#slide4:checked ~ .slides .arrow-left label[for="slide3"],
-#slide1:checked ~ .slides .arrow-right label[for="slide2"],
-#slide2:checked ~ .slides .arrow-right label[for="slide3"],
-#slide3:checked ~ .slides .arrow-right label[for="slide4"],
-#slide4:checked ~ .slides .arrow-right label[for="slide1"] {
-  display: block;
+.nav span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
 }
-.arrow label { display: none; }
 
+.nav:hover {
+  color: #3bb6b6;
+  background: none;
+}
 
+.left { left: -80px; }
+.right { right: -80px; }
+
+.left1, .right1,
+.left2, .right2,
+.left3, .right3,
+.left4, .right4,
+.left5, .right5,
+.left6, .right6 {
+  display: none;
+}
+
+#slide1:checked ~ .left1,
+#slide1:checked ~ .right1,
+#slide2:checked ~ .left2,
+#slide2:checked ~ .right2,
+#slide3:checked ~ .left3,
+#slide3:checked ~ .right3,
+#slide4:checked ~ .left4,
+#slide4:checked ~ .right4,
+#slide5:checked ~ .left5,
+#slide5:checked ~ .right5,
+#slide6:checked ~ .left6,
+#slide6:checked ~ .right6 {
+  display: flex;
+}
+
+/* Dots (on image, centered at bottom) */
 .dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 40px;
   display: flex;
   justify-content: center;
-  margin-top: 16px;
   gap: 10px;
+  z-index: 3;
+  pointer-events: none;
 }
 
-.dots input[type="radio"] {
-  appearance: none;
-  width: 16px;
-  height: 16px;
+.dots label {
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
-  background: #ccc;
+  background: #fff;
+  opacity: 0.9;
+  display: inline-block;
   cursor: pointer;
   border: 2px solid #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  transition: background 0.3s;
+  transition: background 0.2s, border 0.2s;
+  pointer-events: auto;
+  box-sizing: border-box;
 }
 
-.dots input[type="radio"]:checked {
-  background: #333;
-  border-color: #333;
+/* All dots solid white by default */
+.dots label {
+  background: #fff;
+  border: 2px solid #fff;
 }
+
+/* The active dot: empty (transparent fill, white border) */
+#slide1:checked ~ .slider .dots label[for="slide1"],
+#slide2:checked ~ .slider .dots label[for="slide2"],
+#slide3:checked ~ .slider .dots label[for="slide3"],
+#slide4:checked ~ .slider .dots label[for="slide4"],
+#slide5:checked ~ .slider .dots label[for="slide5"],
+#slide6:checked ~ .slider .dots label[for="slide6"] {
+  background: transparent;
+  border: 2px solid #fff;
+}
+
+
+
+.slider-container {
+  position: relative;
+  width: 1100px;
+  margin: 120px auto 120px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.slider {
+  position: relative;
+  width: 1100px;
+  height: 700px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  background: none;
+  border-radius: 0;
+}
+
+.slides {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide img {
+  width: 1100px;
+  height: 700px;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+#slide1:checked ~ .slider .slides .s1,
+#slide2:checked ~ .slider .slides .s2,
+#slide3:checked ~ .slider .slides .s3,
+#slide4:checked ~ .slider .slides .s4,
+#slide5:checked ~ .slider .slides .s5,
+#slide6:checked ~ .slider .slides .s6 {
+  opacity: 1;
+  z-index: 1;
+}
+
+/* Navigation chevrons OUTSIDE the image box */
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3.5rem;
+  color: #333;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  cursor: pointer;
+  z-index: 10;
+  background: none;
+  border: none;
+  border-radius: 0;
+  opacity: 0.9;
+  user-select: none;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+}
+
+.nav:hover {
+  color: #3bb6b6;
+  background: none;
+}
+
+.left { left: -80px; }
+.right { right: -80px; }
+
+.left1, .right1,
+.left2, .right2,
+.left3, .right3,
+.left4, .right4,
+.left5, .right5,
+.left6, .right6 {
+  display: none;
+}
+
+#slide1:checked ~ .left1,
+#slide1:checked ~ .right1,
+#slide2:checked ~ .left2,
+#slide2:checked ~ .right2,
+#slide3:checked ~ .left3,
+#slide3:checked ~ .right3,
+#slide4:checked ~ .left4,
+#slide4:checked ~ .right4,
+#slide5:checked ~ .left5,
+#slide5:checked ~ .right5,
+#slide6:checked ~ .left6,
+#slide6:checked ~ .right6 {
+  display: flex;
+}
+
+/* Dots (on image, centered at bottom) */
+.dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.dotsbody.custom-bg {
+  background: #6ed3cf;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.wave-top, .wave-bottom {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.wave-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.wave-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.slider-container {
+  position: relative;
+  width: 1100px;
+  margin: 120px auto 120px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.slider {
+  position: relative;
+  width: 1100px;
+  height: 700px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  background: none;
+  border-radius: 0;
+}
+
+.slides {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide img {
+  width: 1100px;
+  height: 700px;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+#slide1:checked ~ .slider .slides .s1,
+#slide2:checked ~ .slider .slides .s2,
+#slide3:checked ~ .slider .slides .s3,
+#slide4:checked ~ .slider .slides .s4,
+#slide5:checked ~ .slider .slides .s5,
+#slide6:checked ~ .slider .slides .s6 {
+  opacity: 1;
+  z-index: 1;
+}
+
+/* Navigation chevrons OUTSIDE the image box */
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3.5rem;
+  color: #333;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  cursor: pointer;
+  z-index: 10;
+  background: none;
+  border: none;
+  border-radius: 0;
+  opacity: 0.9;
+  user-select: none;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+}
+
+.nav:hover {
+  color: #3bb6b6;
+  background: none;
+}
+
+.left { left: -80px; }
+.right { right: -80px; }
+
+.left1, .right1,
+.left2, .right2,
+.left3, .right3,
+.left4, .right4,
+.left5, .right5,
+.left6, .right6 {
+  display: none;
+}
+
+#slide1:checked ~ .left1,
+#slide1:checked ~ .right1,
+#slide2:checked ~ .left2,
+#slide2:checked ~ .right2,
+#slide3:checked ~ .left3,
+#slide3:checked ~ .right3,
+#slide4:checked ~ .left4,
+#slide4:checked ~ .right4,
+#slide5:checked ~ .left5,
+#slide5:checked ~ .right5,
+#slide6:checked ~ .left6,
+#slide6:checked ~ .right6 {
+  display: flex;
+}
+
+/* Dots (on image, centered at bottom) */
+.dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.dots label {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0.9;
+  display: inline-block;
+  cursor: pointer;
+  border: 2px solid #fff;
+  transition: background 0.2s, border 0.2s;
+  pointer-events: auto;
+  box-sizing: border-box;
+}
+
+/* All dots solid white by default */
+.dots label {
+  background: #fff;
+  border: 2px solid #fff;
+}
+
+/* The active dot: empty (transparent fill, white border) */
+#slide1:checked ~ .slider .dots label[for="slide1"],
+#slide2:checked ~ .slider .dots label[for="slide2"],
+#slide3:checked ~ .slider .dots label[for="slide3"],
+#slide4:checked ~ .slider .dots label[for="slide4"],
+#slide5:checked ~ .slider .dots label[for="slide5"],
+#slide6:checked ~ .slider .dots label[for="slide6"] {
+  background: transparent;
+  border: 2px solid #fff;
+}
+
