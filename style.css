@@ -1,0 +1,101 @@
+*{
+      margin:0;
+      padding:0;
+}
+header{
+      position:relative;
+}
+.hero{
+      width:100%;
+      height:900px;
+
+
+}
+.hero img{
+      width:100%;
+      height:55rem;
+      margin:0;
+      filter:brightness(0.8);
+} 
+.hero a{
+      position:absolute;
+      top:7%;
+      left:3%;
+      text-decoration:none;
+      color:#ffffff;
+      font-size:3rem;
+      font-weight:800;
+
+}
+.hero h2{
+      position:absolute;
+      margin-top:-600px;
+      left:37%;
+      display: flex;
+      justify-content: center;
+      color:#ffffff;
+      font-size:6rem;
+
+}
+.hero p{
+      position:absolute;
+      top:45%;
+      left:30%;
+      color:#ffffff;
+      font-size:1.5rem;
+      text-align:center;
+      width:40%;
+    font-weight: lighter;
+}
+.hero i{
+      position:absolute;
+      top:10%;
+      right:2%;
+      color:#ffffff;
+      font-size:3rem;
+      cursor:pointer;
+}
+
+.resources {
+  background-color: transparent; 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem 1.5rem;
+  padding: 0;            
+  text-align: center;
+  margin: 0 auto;
+  width: 1300px;
+  width: 100%;
+  margin-top: 0;         
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: transparent;
+  padding: 1rem 0;
+}
+
+.card img {
+  width: 60px;
+  height: 60px;
+  margin-top: 40px; 
+  object-fit: contain;
+}
+
+.card h1 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-family: 'Abril Fatface', Times, serif;
+  color: black;
+  margin: 0.5rem 0 0.2rem 0;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  max-width: 250px;
+  margin: 0 auto;
+}

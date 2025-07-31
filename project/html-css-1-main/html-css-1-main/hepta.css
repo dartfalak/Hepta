@@ -302,7 +302,6 @@ hr{
   height: 60px;
   margin-top: 40px; 
   object-fit: contain;
-  
 }
 
 .card h1 {
@@ -441,7 +440,7 @@ input[type="radio"] {
 }
 
 .nav:hover {
-  color:grey;
+  color: #3bb6b6;
   background: none;
 }
 
@@ -770,9 +769,7 @@ input[type="radio"] {
     letter-spacing: 3px;
     font-size: 1rem;
     margin-top: 10px;
-    font-style: italic;
-    /* font-family: 'Mukta Mahee', 'Arial', sans-serif; */
-    font-weight: lighter;
+    
 }
 
 .rating-value {
@@ -876,7 +873,7 @@ footer {
   background: black;
   color: #fff;
 }
-
+/* Responsive adjustments */
 @media (max-width: 768px) {
     .footer-column {
         flex: 100%;
