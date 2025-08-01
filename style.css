@@ -99,3 +99,141 @@ header{
   max-width: 250px;
   margin: 0 auto;
 }
+
+main{
+    margin-top:150px;
+    position:relative;
+
+}
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 80px;
+}
+
+.intro {
+    flex: 1;
+}
+
+.intro img {
+    width: 100%;
+    max-width: 600px;
+    height: 600px;
+    margin-left:110px;
+
+}
+
+.intro-text {
+    flex: 1;
+    padding-left: 60px;
+}
+
+.intro-text h1 {
+    font-size: 39px;
+    font-weight: bolder;
+    margin-bottom: 400px;  
+    color: black;
+    font-family:'Abril Fatface', times, serif;
+    margin-left: 60px;
+
+
+
+}
+
+.intro-text p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #6c757d;
+    font-family: 'Mukta Mahee', 'Arial', sans-serif;
+    font-weight: 100;
+     margin-left: 60px;
+     margin-top: -380px;
+
+
+}
+
+.btn {
+      height: 200px;
+      width: 200px;
+}
+
+.btn button {
+      height: 50px;
+      width: 85%;
+      border-radius: 3px;
+      border-color: #65C0BA;
+      margin-left: 80px;
+      margin-top: 60px;
+      text-transform: capitalize;
+      font-family: 'Mukta Mahee', 'Arial', sans-serif;
+      letter-spacing: 2px;
+      background-color: transparent;
+
+}
+
+
+.room {
+    flex: 1;
+}
+
+.room img {
+    width: 100%;
+    max-width: 600px;
+    height: 600px;
+    margin-left:790px;
+    margin-top: -63px;
+
+}
+
+
+
+.room h1 {
+   font-size: 39px;
+    font-weight: bolder;
+    margin-top: -450px;  
+    color: black;
+    font-family:'Abril Fatface', times, serif;
+    margin-left: 290px;
+
+
+
+
+}
+
+.room p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #6c757d;
+    font-family: 'Mukta Mahee', 'Arial', sans-serif;
+    font-weight: 100;
+      margin-left: 250px;
+     margin-top: 15px;
+
+
+}
+
+.btn2 {
+      height: 200px;
+      width: 200px;
+}
+
+.btn2 button {
+      height: 50px;
+      width: 85%;
+      border-radius: 3px;
+      border-color: #65C0BA;
+      margin-left: 280px;
+      margin-top: 60px;
+      text-transform: capitalize;
+      font-family: 'Mukta Mahee', 'Arial', sans-serif;
+      letter-spacing: 2px;
+      background-color: transparent;
+
+}
