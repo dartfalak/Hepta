@@ -29,8 +29,8 @@ header{
 }
 .hero h2{
       position:absolute;
-      margin-top:-600px;
-      left:35%;
+      margin-top:-450px;
+      left:-55%;
       display: flex;
       justify-content: center;
       color:#ffffff;
@@ -39,7 +39,7 @@ header{
 }
 .hero p{
       position:absolute;
-      top:45%;
+      top:42%;
       left:32%;
       color:#ffffff;
       font-size:1.5rem;

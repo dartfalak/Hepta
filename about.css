@@ -620,7 +620,7 @@ input[type="radio"] {
   margin-top:15px;
   font-size: 1.3rem;
   font-weight: bold;
-  margin-bottom: 12px;
+  /* margin-bottom: 12px; */
   margin-left: 20px;
 }
 
@@ -650,7 +650,7 @@ input[type="radio"] {
   position: relative;
   font-weight: bolder;
   margin-top: 60px;
-  font-family:'Abril Fatface', times, serif; ;
+  font-family:'Abril Fatface', times, serif; 
 }
 
 .testimonials h1:after {

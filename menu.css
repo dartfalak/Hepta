@@ -1,0 +1,52 @@
+/* Hide checkbox for hamburger */
+#menu-toggle {
+  display: none;
+}
+
+/* Hamburger icon styling */
+.menu-icon {
+  font-size: 2rem;
+  cursor: pointer;
+  display: block;
+  padding: 10px;
+}
+
+/* Menu hidden by default */
+.menu {
+  display: none;
+  background: #fff;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid #ccc;
+}
+
+/* Show menu when checkbox is checked */
+#menu-toggle:checked + .menu-icon + .menu {
+  display: block;
+}
+
+/* Active link */
+.menu a.active {
+  color: #4db6ac;
+  font-weight: bold;
+}
+
+/* Basic menu styling */
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
