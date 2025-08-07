@@ -27,7 +27,7 @@ header{
       font-weight:800;
 
 }
-.hero h2{
+ .hero h2{
       position:absolute;
       margin-top:-600px;
       left:35%;
@@ -46,7 +46,12 @@ header{
       text-align:center;
       width:40%;
     font-weight: lighter;
-}
+} 
+ /* .color {
+  font-size:1.5rem;
+  color:rgba(255, 255, 255, 0.5);
+} */
+
 .hero i{
       position:absolute;
       top:6%;
