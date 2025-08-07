@@ -47,8 +47,6 @@
 #menu-toggle:checked + .menu-icon {
   color: black !important;
 }
-
-/* Menu list styling */
 .menu ul {
   list-style: none;
   text-align: center;

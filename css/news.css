@@ -134,7 +134,7 @@ h2 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 80px;
+  gap: 50px;
   max-width: 1200px; 
   margin: 0 auto 120px;
   padding: 0 20px;
@@ -145,20 +145,30 @@ h2 {
   background: white;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   width: calc(50% - 40px);
-  max-width: 500px;
+  max-width: 390px;
   overflow: hidden;
+ 
+
+}
+ 
+span {
+    font-weight: lighter;
+    font-family: 'Abril Fatface', serif ;
 }
 
+.feature-box span {
+    font-size: 20px;
+}
 .feature-box img {
   width: 100%;
   height: 300px;
   object-fit: cover;
 }
 
-.feature-text {
+.feature-text  {
   padding: 20px;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 25px;
 }
 
 .search-container {
@@ -181,6 +191,7 @@ h2 {
   font-size: 1.2rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
   font-family: 'Playfair Display', serif;
+  margin-left: 180px;
 }
 
 .post {
@@ -199,6 +210,7 @@ h2 {
   align-items: center;
   gap: 20px; 
   padding:10px;
+  
 }
 
 .post-cont img {
@@ -206,6 +218,7 @@ h2 {
   max-width: 300px; 
   height: auto; 
   display: block; 
+  height: 100px;
 }
 
 .categories {
