@@ -17,16 +17,7 @@ header{
       margin:0;
       filter:brightness(0.8);
 } 
-.hero a{
-      position:absolute;
-      top:7%;
-      left:3%;
-      text-decoration:none;
-      color:#ffffff;
-      font-size:2rem;
-      font-weight:800;
 
-}
  .hero h2{
       position:absolute;
       margin-top:-600px;
@@ -47,10 +38,21 @@ header{
       width:40%;
     font-weight: lighter;
 } 
- /* .color {
+ .hepta {
+  position: absolute;
+  top: 7%;
+  left: 3%;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.color {
   font-size:1.5rem;
   color:rgba(255, 255, 255, 0.5);
-} */
+}
+
 
 .hero i{
       position:absolute;

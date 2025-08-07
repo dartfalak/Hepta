@@ -43,30 +43,32 @@ header {
 }
 .hero h2 {
   position: absolute;
-  top: 35%;
-  left: 35%;
+  top: 32%;
+  left: 34%;
   display: flex;
   justify-content: center;
   color: #ffffff;
-  font-size: 5rem;
+  font-size: 5.4rem;
 }
 
 .hero p {
   position: absolute;
-  top: 49%;
-  left: 35%;
+  top: 45%;
+  left: 37%;
   color: #ffffff;
   font-size: 1.5rem;
   text-align: center;
 }
 
 
+
+
 .btn a {
-    padding: 12px;
+    
     display:flex;
     justify-content:center;
     align-items:center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     background: transparent;
     color: #fff;
     border: 2px solid #fff;
@@ -75,11 +77,13 @@ header {
     transition: all 0.3s ease;
     font-family: 'Playfair Display', serif;
     position:absolute;
-    top:60%;
+    top:54%;
     left:45%;
     width:200px;
     height:40px;
     text-decoration:none;
+    padding: 27px;
+    letter-spacing: 1px;
 }
 
 .btn a:hover {

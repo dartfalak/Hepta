@@ -7,30 +7,35 @@ header{
 }
 .hero{
       width:100%;
-      height:900px;
+      height:1000px;
 
 
 }
 .hero img{
       width:100%;
-      height:700px;
-      margin:0;
+      height:900px;
+      /* margin:0; */
       filter:brightness(0.8);
+      
 } 
-.hero a{
-      position:absolute;
-      top:7%;
-      left:3%;
-      text-decoration:none;
-      color:#ffffff;
-      font-size:2rem;
-      font-weight:800;
+ .hepta {
+  position: absolute;
+  top: 7%;
+  left: 1%;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 800;
+}
 
+.color {
+  font-size:1.5rem;
+  color:rgba(255, 255, 255, 0.5);
 }
 .hero h2{
       position:absolute;
-      margin-top:-450px;
-      margin-left:570px;
+      margin-top:-640px;
+      margin-left:600px;
       display: flex;
       justify-content: center;
       color:#ffffff;
@@ -39,8 +44,8 @@ header{
 }
 .hero p{
       position:absolute;
-      top:42%;
-      left:30%;
+      top:40%;
+      left:32%;
       color:#ffffff;
       font-size:1.5rem;
       text-align:center;

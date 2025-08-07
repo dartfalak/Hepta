@@ -20,26 +20,26 @@ header {
   filter: brightness(0.8);
 }
 
-.hepta {
+ .hepta {
   position: absolute;
   top: 7%;
   left: 3%;
   text-decoration: none;
   color: #ffffff;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 800;
 }
 
 .color {
-  font-size:1.9rem;
+  font-size:1.5rem;
   color:rgba(255, 255, 255, 0.5);
-}
+} 
 
 
 .hero h2 {
   position: absolute;
-  top: 30%;
-  left: 30%;
+  top: 29%;
+  left: 45%;
   display: flex;
   justify-content: center;
   color: #ffffff;
@@ -49,9 +49,9 @@ header {
 .hero p {
   position: absolute;
   top: 49%;
-  left: 30%;
+  left: 37%;
   color: #ffffff;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   text-align: center;
 }
 
@@ -113,6 +113,7 @@ main{
     margin-top:150px;
     position:relative;
 margin-bottom:200px;
+height: 1000px;
 }
 
 
@@ -139,6 +140,7 @@ h2 {
   margin: 0 auto 120px;
   padding: 0 20px;
   margin-left:40px;
+  
 }
 
 .feature-box {
@@ -147,13 +149,15 @@ h2 {
   width: calc(50% - 40px);
   max-width: 390px;
   overflow: hidden;
- 
+  margin-top: -50px;
+
 
 }
  
 span {
     font-weight: lighter;
     font-family: 'Abril Fatface', serif ;
+    color: #555;
 }
 
 .feature-box span {
@@ -174,13 +178,15 @@ span {
 .search-container {
   position: absolute;
   top: 7%;
-  left: 85%;
+  left: 83%;
   transform: translate(-50%, -50%);
   width: 350px;
   max-width: 80%;
   z-index: 10;
   border: 2px black;
   padding:30px;
+   margin-top: -100px;
+  
 
 }
 
@@ -191,45 +197,55 @@ span {
   font-size: 1.2rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
   font-family: 'Playfair Display', serif;
-  margin-left: 180px;
+  margin-left: 80px;
+ 
+}
+.popular-post {
+  margin-top: -1200px;
+  margin-left: 1200px;
 }
 
-.post {
-  width: 350px;
-  height: auto; 
-  background-color: #ffffff;
-  padding: 20px;
-  margin: 0 auto; 
-  margin-left:1300px;
-  margin-top:-1200px;
-}
-
-.post-cont {
+.popular-post .post-item {
   display: flex;
-  flex-direction: column; 
   align-items: center;
-  gap: 20px; 
-  padding:10px;
-  
+  margin-bottom: 15px;
 }
 
-.post-cont img {
-  width: 150px; 
-  max-width: 300px; 
-  height: auto; 
-  display: block; 
-  height: 100px;
+.popular-post .post-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin-right: 15px;
+  border-radius: 5px;
 }
+
+.popular-post .post-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.popular-post .post-text .date {
+  font-size: 12px;
+  color: #aaa;
+  margin: 0;
+}
+
+.popular-post .post-text h6 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
 
 .categories {
   width: 300px;
-
   background-color: #ffffff;
   padding: 20px;
   margin: 40px auto;
-  border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  margin-left:1300px;
+  margin-left:1200px;
+  height:500px;
+
 }
 
 .categories h3 {
@@ -279,6 +295,7 @@ footer {
     background-color:black;
     padding: 40px 0 20px;
     color:white;
+    margin-top: 200px;
     
 }
 
