@@ -31,16 +31,7 @@ header{
   font-size:1.5rem;
   color:rgba(255, 255, 255, 0.5);
 }
-.hero a{
-      position:absolute;
-      top:7%;
-      left:3%;
-      text-decoration:none;
-      color:#ffffff;
-      font-size:2rem;
-      font-weight:800;
 
-}
 .hero h2{
       position:absolute;
       margin-top:-450px;
