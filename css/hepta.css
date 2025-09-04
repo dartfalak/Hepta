@@ -1515,7 +1515,7 @@ footer {
 .social-icons a:hover {
   background: black;
   color: #fff;
-} */
+} 
 
 @media (min-width: 768px) {
   .footer-container { grid-template-columns: repeat(2, 1fr); }
