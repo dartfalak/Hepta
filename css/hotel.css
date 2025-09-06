@@ -1127,30 +1127,74 @@ input[type="radio"] {
 }
 
 footer {
-  background-color: black;
-  padding: 40px 20px;
-  color: white;
+    background-color:black;
+    padding: 40px 0 20px;
+    color:white;
+    
 }
 
 .footer-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 2rem;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    height: 500px;
 }
 
 .footer-column {
-  flex: 1 1 200px;
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    margin-top: 80px;
+}
+.footer-column h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    line-height: 2.5;
+}
+
+.footer-column ul li:hover {
+    text-decoration: underline;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    line-height: 2.5;
+}
+
+.newsletter p {
+    margin-bottom: 15px;
+}
+
+.email-input input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
 }
 
 .footer-bottom {
-  text-align: center;
-  padding-top: 20px;
-  border-top: 1px solid #ddd;
-  font-size: 14px;
-  margin-top: 20px;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
 }
 
 .social-icons {
@@ -1161,6 +1205,9 @@ footer {
   display: inline-block;
   width: 40px;
   height: 40px;
+  
+  
+  margin-right: 10px;
   text-align: center;
   line-height: 40px;
   color: #fff;
@@ -1171,6 +1218,7 @@ footer {
   background: black;
   color: #fff;
 }
+
 
 /* MEDIA QUERIES */
 @media (max-width: 1024px) {
