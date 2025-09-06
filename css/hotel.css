@@ -812,7 +812,7 @@ main {
   padding: 4rem 2rem;
 }
 
-.intro, .room {
+.intro{
   /* flex: 1 1 450px; */
   display: flex;
   flex-direction: column;
@@ -820,24 +820,44 @@ main {
   text-align: left;
 }
 
-.intro img, .room img {
+/* 
+.btn2 {
+      height: 200px;
+      width: 200px;
+}
+
+.btn2 button {
+      height: 50px;
+      width: 85%;
+      border-radius: 3px;
+      border-color: #65C0BA;
+      margin-left: -100px;
+      margin-top: 60px;
+      text-transform: capitalize;
+      font-family: 'Mukta Mahee', 'Arial', sans-serif;
+      letter-spacing: 2px;
+      background-color: transparent;
+
+} */
+
+.intro img{
   width: 100%;
   max-width: 600px;
   height: 600px;
 }
 
-.intro-text, .room-text {
+.intro-text {
   max-width: 600px;
   margin-top: 1rem;
 }
 
-.intro-text h1, .room h1 {
+.intro-text h1 {
   font-size: clamp(2rem, 4vw, 2.5rem);
   font-family: 'Abril Fatface', serif;
   margin-bottom: 1rem;
 }
 
-.intro-text p, .room p {
+.intro-text p{
   font-size: 1rem;
   line-height: 1.8;
   color: #6c757d;
@@ -845,13 +865,14 @@ main {
   font-weight: 100;
 }
 
-.btn, .btn2 {
+ .btn {
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+  margin-left:-300px;
 }
 
-.btn button, .btn2 button {
+.btn button{
   height: 45px;
   padding: 0 1.5rem;
   border-radius: 3px;
@@ -862,18 +883,77 @@ main {
   letter-spacing: 2px;
   cursor: pointer;
   transition: all 0.3s ease;
-}
+
+} 
 
 .btn button:hover, .btn2 button:hover {
   background: #65C0BA;
   color: #000;
 }
 
+.room {
+    flex: 1;
+}
+
+.room img {
+    width: 100%;
+    max-width: 600px;
+    height: 600px;
+    margin-left:795px;
+    margin-top: -65px;
+
+}
+
+
+
+.room h1 {
+   font-size: 39px;
+    font-weight: bolder;
+    margin-top: -500px;  
+    color: black;
+    font-family:'Abril Fatface', times, serif;
+    margin-left: 290px;
+
+
+
+
+}
+
+.room p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #6c757d;
+    font-family: 'Mukta Mahee', 'Arial', sans-serif;
+    font-weight: 100;
+    margin-left: 230px;
+     margin-top: 30px;
+
+
+}
+
+.btn2 {
+      height: 200px;
+      width: 200px;
+}
+
+.btn2 button {
+      height: 50px;
+      width: 85%;
+      border-radius: 3px;
+      border-color: #65C0BA;
+      margin-left: 230px;
+      margin-top: 60px;
+      text-transform: capitalize;
+      font-family: 'Mukta Mahee', 'Arial', sans-serif;
+      letter-spacing: 2px;
+      background-color: transparent;
+}
+
 .destination {
   padding: 80px 20px;
   text-align: center;
   max-width: 1200px;
-  margin: auto;
+  margin-left: 200px;
 }
 
 .destination h4 {
@@ -881,6 +961,7 @@ main {
   margin-bottom: 20px;
   font-family: 'Abril Fatface', serif;
   color: #000000;
+  margin-left: -200px;
 }
 
 .dest-p {
