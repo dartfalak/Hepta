@@ -1075,6 +1075,17 @@ input[type="radio"] {
   border: 2px solid #fff;
 }
 
+
+.destination1 {
+  height: auto;
+}
+.destination1 h4{
+  margin-left: 200px;
+  margin-top: -50px;
+  margin-bottom: -20px;
+ 
+  
+}
 .container1 {
   display: flex;
   flex-wrap: wrap;
@@ -1082,6 +1093,7 @@ input[type="radio"] {
   gap: 2rem;
   margin: 4rem auto;
   max-width: 1200px;
+
 }
 
 .feature-box {
@@ -1090,6 +1102,7 @@ input[type="radio"] {
   width: 100%;
   max-width: 350px;
   overflow: hidden;
+  
 }
 
 .feature-box img {
