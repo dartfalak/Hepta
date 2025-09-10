@@ -178,7 +178,7 @@ span {
 .search-container {
   position: absolute;
   top: 7%;
-  left: 83%;
+  left: 82%;
   transform: translate(-50%, -50%);
   width: 350px;
   max-width: 80%;
@@ -202,7 +202,8 @@ span {
 }
 .popular-post {
   margin-top: -1200px;
-  margin-left: 1200px;
+  margin-left: 1180px;
+
 }
 
 .popular-post .post-item {
@@ -241,10 +242,11 @@ span {
   width: 300px;
   background-color: #ffffff;
   padding: 20px;
-  margin: 40px auto;
+  margin-left:-40px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  margin-left:1200px;
-  height:500px;
+   margin-left:1180px; 
+  height:400px;
+  margin-top: 40px;
 
 }
 
@@ -260,7 +262,7 @@ span {
 .category-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  
 }
 
 .category-list li {
@@ -386,24 +388,53 @@ footer {
 }
 
 
-@media (min-width: 768px) {
-  .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+@media (max-width: 1024px) {
+  .hero {
+    height: auto;
   }
-}
 
-@media (min-width: 1024px) {
-  .container {
-    max-width: 960px;
-    margin: 0 auto;
+  .hero img {
+    height: 500px;
+    object-fit: cover;
   }
-}
 
+  .hero h2 {
+    font-size: 3.5rem;
+    top: 25%;
+    left: 10%;
+    right: 10%;
+    text-align: center;
+  }
 
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1200px;
+  .hero p {
+    font-size: 1.4rem;
+    top: 45%;
+    left: 10%;
+    right: 10%;
+    text-align: center;
+  }
+
+  .btn a {
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .scroll {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .container1 {
+    gap: 40px;
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .post,
+  .categories {
+    margin: 40px auto;
+    width: 80%;
+    position: static;
   }
 }
