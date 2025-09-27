@@ -107,9 +107,10 @@ main {
   position: relative;
 }
 
-.intro img {
+
+ .intro img {
   width: 500px;
-  position: relative;
+  position:relative;
   top: 10%;
   left: 17%;
 }
@@ -135,10 +136,17 @@ main {
 
 @media (min-width: 768px) {
   .intro {
-    grid-template-columns: 1fr 1fr;
-    text-align: left;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
   }
-}
+
+  .intro .image,
+  .intro .text {
+    flex: 1;
+  }
+} 
 
 .experience {
   width: 100%;
@@ -466,7 +474,7 @@ input[type="radio"] {
   padding: 40px 20px;
   text-align: center;
 }
-
+ 
 .testimonials h1 {
   font-size: 3.5rem;
   color: #333;
@@ -483,13 +491,8 @@ input[type="radio"] {
   gap: 30px;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-.testimonial {
-  flex: 1;
-  min-width: 300px;
-  max-width: 350px;
-}
+} 
+ 
 
 .testimonial-content {
   display: flex;
@@ -510,6 +513,31 @@ input[type="radio"] {
   margin-right: 200px;
 }
 
+
+@media (max-width: 992px) {
+  .testimonials-container {
+    justify-content: center;
+  }
+
+  .testimonial {
+    flex: 1 1 45%; 
+    max-width: 100%;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .testimonials-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial {
+    flex: 1 1 100%;
+    min-width: 90%; 
+    max-width: 100%;
+  }
+}
 .quote {
   font-size: 1rem;
   line-height: 1.6;
