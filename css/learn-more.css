@@ -43,6 +43,15 @@ section h2 {
   color: #65C0BA;
 }
 
+.about {
+  max-width: 800px;
+  margin-top: -290px;
+
+}
+
+.about h2 {
+  font-size: 2rem;
+}
 
 .about p {
   text-align: center;
@@ -144,7 +153,7 @@ section h2 {
   color: #fff;
   padding: 60px 20px;
   border-radius: 10px;
-  margin-left:220px;
+  margin-left:10px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
