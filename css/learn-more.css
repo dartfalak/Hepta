@@ -1,4 +1,4 @@
-/* General reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -11,9 +11,9 @@ body {
   color: #333;
 }
 
-/* Hero / header */
+
 .hero {
-  background: url('images/hero.jpg') center/cover no-repeat;
+
   color: #fff;
   text-align: center;
   padding: 80px 20px;
@@ -23,15 +23,16 @@ body {
   margin-bottom: 15px;
 }
 .hero p {
-  /* font-size: 1.2rem; */
-   font-family: 'Abril Fatface', serif;
-   font-weight: bolder;
+  font-size: 1.2rem;
 }
 
-/* Sections */
+
+
+
+
 section {
   padding: 50px 20px;
-  max-width: 1100px;
+  max-width: 1900px;
   margin: auto;
 }
 
@@ -42,23 +43,11 @@ section h2 {
   color: #65C0BA;
 }
 
-/* About */
-
-.about h2 {
-    margin-top: -200px;
-    font-size: 2rem;
-}
-
 
 .about p {
   text-align: center;
   font-size: 1.1rem;
-    font-family: 'Abril Fatface', serif;
-   font-weight: bolder;
-   margin-top: -20px;
-
 }
-
 
 
 .destinations h2 {
@@ -84,51 +73,60 @@ section h2 {
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   text-align: center;
 }
+
 .card img {
   width: 100%;
-  height: 160px;
+  height: 280px;
   object-fit: cover;
 }
+
 .card h3 {
   margin: 10px 0 5px;
 }
+
 .card p {
   margin-bottom: 15px;
   font-size: 0.95rem;
 }
 
-/* Services */
-.services ul {
-  list-style: none;
+
+.services .service-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.service-card {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 25px 20px;
   text-align: center;
-}
-.services li {
-  background: #f2f2f2;
-  padding: 15px;
-  border-radius: 4px;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  cursor: pointer;
 }
 
-
-/* --- Our Services Buttons Hover Effect --- */
-.services li {
-  background: #f2f2f2;
-  padding: 15px;
-  border-radius: 4px;
-  cursor: pointer;           
-  transition: background 0.3s, color 0.3s;
-  color: #333;               
+.service-card h3 {
+  margin-bottom: 12px;
+  color: #65C0BA;
+  font-size: 1.2rem;
 }
 
-.services li:hover {
-  background: #65C0BA;  
-  color: #fff;          
+.service-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  background-color: #e6f7f7;
 }
 
 
-/* Testimonials */
+
+
 .testimonials blockquote {
   font-style: italic;
   text-align: center;
@@ -139,30 +137,45 @@ section h2 {
   margin: 0 auto;
 }
 
-/* Call to action */
+
 .cta {
   text-align: center;
-  background: #65C0BA;
+  background: linear-gradient(135deg, #65C0BA, #2F9C95);
   color: #fff;
-  padding: 40px 20px;
-  border-radius: 6px;
+  padding: 60px 20px;
+  border-radius: 10px;
+  margin-left:220px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
+
 .cta h2 {
-  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
 }
+
+.cta-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
 .book-now {
   display: inline-block;
   margin-top: 15px;
-  padding: 12px 25px;
-  background: #fff;
+  padding: 15px 35px;
+  background-color: #fff;
   color: #65C0BA;
+  font-weight: bold;
+  font-size: 1.1rem;
   text-decoration: none;
-  border-radius: 4px;
-  transition: 0.3s;
+  border-radius: 6px;
+  transition: all 0.3s ease;
 }
+
 .book-now:hover {
-  background: #e6e6e6;
+  background-color: #e6e6e6;
+  color: #2F9C95;
 }
+
 
 footer {
     background-color:black;
