@@ -62,12 +62,7 @@ header{
       cursor:pointer;
 }
 
-/* body {
-    font-family: Arial, sans-serif;
-    background: #fff;
-    margin: 0;
-    padding: 0;
-} */
+
 
 .container {
     display: flex;
@@ -258,7 +253,7 @@ hr{
   font-weight: lighter;
   color:grey;
   font-style: italic;
-  margin-top: -10px;
+  margin-top: 10px;
   margin-left: -160px;
 }
 
