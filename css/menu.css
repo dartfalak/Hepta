@@ -1,4 +1,4 @@
- * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,7 +8,6 @@
   display: none;
 }
 
- 
 .menu-icon {
   width: 35px;
   height: 25px;
@@ -32,7 +31,6 @@
   transform-origin: center;
 }
 
- 
 #menu-toggle:checked + .menu-icon .bar:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
@@ -45,11 +43,10 @@
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
- 
+
 #menu-toggle:checked + .menu-icon .bar {
   background-color: black;
 }
-
 
 .menu {
   position: fixed;
@@ -95,5 +92,4 @@
 
 .menu ul li a:hover {
   color: #4db6ac;
-} 
-
+}
