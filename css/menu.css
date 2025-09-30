@@ -1,4 +1,5 @@
 
+
 * {
   margin: 0;
   padding: 0;
@@ -9,75 +10,6 @@
   display: none;
 }
 
-
-.menu-icon {
-  font-size: 3rem;
-  cursor: pointer;
-  padding: 15px 20px;
-  display: block;
-  position: absolute;
-  top: 15px;
-  right: 20px;
-  z-index: 1001;
-  background: transparent;
-  border: none;
-  color:white;
-}
-
-
-
-
-.menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.95);
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-
-
-#menu-toggle:checked + .menu-icon + .menu {
-  display: flex;
-}
-#menu-toggle:checked + .menu-icon {
-  color: black !important;
-}
-.menu ul {
-  list-style: none;
-  text-align: center;
-}
-
-.menu ul li {
-  margin: 20px 0;
-  
-}
-
-.menu ul li a {
-  text-decoration: none;
-  font-size: 2.5rem;
-  color: #333;
-  font-weight: 600;
-  transition: color 0.3s ease;
-  font-family:  'Abril Fatface', Times, serif;
-}
-
-.menu ul li a:hover {
-  color: #4db6ac;
-}
-
-
-.menu a.active {
-  color: #4db6ac;
-  border-bottom: 2px solid #4db6ac;
-  padding-bottom: 5px;
-}
-
-/* Style for the three bars */
 .menu-icon {
   width: 35px;
   height: 25px;
@@ -98,11 +30,14 @@
   background-color: white;
   border-radius: 2px;
   transition: all 0.3s ease;
+  transform-origin: center;
+
+
 }
 
-/* When checked — animate to cross */
+/* Cross animation — fixed alignment */
 #menu-toggle:checked + .menu-icon .bar:nth-child(1) {
-  transform: rotate(45deg) translate(6px, 6px);
+  transform: rotate(45deg) translate(5px, 5px);
 }
 
 #menu-toggle:checked + .menu-icon .bar:nth-child(2) {
@@ -110,10 +45,57 @@
 }
 
 #menu-toggle:checked + .menu-icon .bar:nth-child(3) {
-  transform: rotate(-45deg) translate(6px, -6px);
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* optional: change bar color when open */
+/* Change bar color to black when menu open */
 #menu-toggle:checked + .menu-icon .bar {
   background-color: black;
 }
+
+/* Full screen menu */
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#menu-toggle:checked + .menu-icon + .menu {
+  display: flex;
+}
+
+.menu ul {
+  list-style: none;
+  text-align: center;
+}
+
+.menu ul li {
+  margin: 20px 0;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: #333;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  font-family: 'Abril Fatface', Times, serif;
+}
+
+.menu ul li a:hover {
+  color: #4db6ac;
+}
+
+.menu a.active {
+  color: #4db6ac;
+  border-bottom: 2px solid #4db6ac;
+  padding-bottom: 5px;
+}
+
