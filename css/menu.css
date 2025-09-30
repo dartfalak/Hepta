@@ -35,7 +35,7 @@
 
 }
 
-/* Cross animation — fixed alignment */
+
 #menu-toggle:checked + .menu-icon .bar:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
@@ -48,12 +48,12 @@
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Change bar color to black when menu open */
+
 #menu-toggle:checked + .menu-icon .bar {
   background-color: black;
 }
 
-/* Full screen menu */
+
 .menu {
   position: fixed;
   top: 0;
