@@ -74,20 +74,7 @@
             A small river named Duden flows by their place and supplies it with the 
             <br>necessary regelialia.</p>
             
-<!-- <a href="#" id="open-video" class="video-btn">▶ Watch The Video</a>
 
-<div id="video-overlay" aria-hidden="true">
-  <div id="video-container" role="dialog" aria-label="Video player">
-    <button id="video-close" aria-label="Close video">✖</button>
-    <iframe id="vimeo-iframe"
-            data-src="https://player.vimeo.com/video/93951774"
-            src=""
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowfullscreen
-            title="My Stuffed Granny"></iframe>
-  </div>
-
-      </div> -->
      <section class="experience">
   <div class="experience-header">
     <h2>Experience Once In Your Life Time</h2>
@@ -398,45 +385,7 @@
         </div>
 
     </footer>
-   <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const openBtn = document.getElementById('open-video');
-  const overlay = document.getElementById('video-overlay');
-  const iframe = document.getElementById('vimeo-iframe');
-  const closeBtn = document.getElementById('video-close');
-
-  if (!openBtn || !overlay || !iframe || !closeBtn) return;
-
-  const srcBase = iframe.dataset.src;
-
-  function openVideo(e) {
-    e.preventDefault();
-    iframe.src = srcBase + '?autoplay=1';
-    overlay.style.display = 'flex';
-    overlay.setAttribute('aria-hidden', 'false');
-    document.body.style.overflow = 'hidden';
-  }
-
-  function closeVideo() {
-    iframe.src = '';
-    overlay.style.display = 'none';
-    overlay.setAttribute('aria-hidden', 'true');
-    document.body.style.overflow = '';
-  }
-
-  openBtn.addEventListener('click', openVideo);
-  closeBtn.addEventListener('click', closeVideo);
-
-  overlay.addEventListener('click', function(e) {
-    if (e.target === overlay) closeVideo();
-  });
-
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape' && overlay.style.display === 'flex') closeVideo();
-  });
-});
- 
-</script>
+   
 
 </body>
 </html>

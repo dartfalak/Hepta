@@ -132,102 +132,6 @@ main {
   width: 40%;
   font-size: 20px;
 }
-/* .video-btn {
-  position:absolute;
-  top:12%;
-  margin-left:830px;
-  display: inline-block;
-  padding: 12px 30px;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #fff;
-  background: #5cb6d7;
-  border: none;
-  border-radius: 30px;
-  text-decoration: none;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  transition: background 0.3s ease, transform 0.3s ease;
-}
-.video-btn:hover {
-  background: #54a0c8;
-  transform: translateY(-2px);
-}
-
-
-#video-overlay {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.85);
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-}
-
-#video-container {
-  position: relative;
-  width: 80%;
-  max-width: 900px;
-  background: #000;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-
-#video-container iframe {
-  width: 100%;
-  height: 500px;
-  border: none;
-}
-
-@media (max-width: 768px) {
-  #video-container iframe {
-    height: 300px;
-  }
-}
-
-#video-close {
-  position: absolute;
-  top: 10px;
-  left: 15px;     
-  background: transparent;
-  border: none;
-  font-size: 2rem;
-  color: white;
-  cursor: pointer;
-  z-index: 10;
-} */
-
-
-@media (max-width: 768px) {
-  #video-container iframe {
-    height: 300px;
-  }
-}
-
-/* #video-close {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  background: transparent;
-  border: none;
-  font-size: 2rem;
-  color: white;
-  cursor: pointer;
-}
-
-
-.close-btn {
-  position: absolute;
-  top: 20px;
-  right: 40px;
-  font-size: 40px;
-  color: white;
-  cursor: pointer;
-  font-weight: bold;
-}
- */
 
 
 @media (min-width: 768px) {
@@ -274,40 +178,11 @@ main {
 }
 
 
-/* .resources {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.resources .item {
-  text-align: center;
-}
-
-.resources .item img {
-  width: 100px;
-  height: auto;  
-  border-radius: 10px;
-}
-
-.resources .item h4 {
-  margin: 15px 0 10px;
-  font-size: 1.3rem;
-  font-weight: bold;
-}
-
-.resources .item p {
-  color: gray;
-  font-size: 0.95rem;
-  
-} */
 
 .resources {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 40px; /* both row and column gaps */
+  gap: 40px; 
   text-align: center;
   max-width: 1-00px;
   margin-top:150px;
