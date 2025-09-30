@@ -29,6 +29,20 @@
     </ul>
   </nav>
 </div>
+<script>
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const current = window.location.pathname.split('/').pop();
+    document.querySelectorAll('.menu a').forEach(link => {
+      if (link.getAttribute('href') === current || 
+          (current === '' && link.getAttribute('href') === 'index.html')) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+  });
+</script>
     <header>
 <div class="hero">
       <img src="hepta.png" alt="HEPTA Logo">
