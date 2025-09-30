@@ -57,7 +57,7 @@ header{
 .hero a {
   position: absolute;
   top: 2%;
-  left: 10%;
+  left: 3%;
   color: #ffffff;
   font-size: 2rem;
   cursor: pointer;
@@ -119,29 +119,27 @@ header{
       width: 200px;
 } */
 
-.btn button {
-      height: 45px;
-      width:25%;
-      border-radius: 3px;
-      border-color: #65C0BA;
-      margin-left: -250px;
-      margin-top: 60px;
-      text-transform: capitalize;
-      font-family: 'Mukta Mahee', 'Arial', sans-serif;
-      letter-spacing: 2px;
-      background-color: transparent;
-      cursor: pointer;
-    transition: all 0.3s ease;
-     font-family: 'Playfair Display', serif;
-
-}
-
 .btn {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-bottom: 40px;
+  margin-top: 1.5rem;
+  margin-left:-210px;
 }
+
+.btn button{
+  height: 45px;
+  padding: 0 1.5rem;
+  border-radius: 3px;
+  border: 1px solid #65C0BA;
+  background-color: transparent;
+  text-transform: capitalize;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+} 
+
 
 .btn button:hover {
   background: #65C0BA;
