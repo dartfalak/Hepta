@@ -1,4 +1,4 @@
-* {
+ * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,7 +8,7 @@
   display: none;
 }
 
-/* Menu icon (hamburger) */
+ 
 .menu-icon {
   width: 35px;
   height: 25px;
@@ -32,7 +32,7 @@
   transform-origin: center;
 }
 
-/* Cross animation */
+ 
 #menu-toggle:checked + .menu-icon .bar:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
@@ -45,12 +45,12 @@
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Change colour of bars when open */
+ 
 #menu-toggle:checked + .menu-icon .bar {
   background-color: black;
 }
 
-/* Full screen menu */
+
 .menu {
   position: fixed;
   top: 0;
@@ -86,7 +86,7 @@
   font-family: 'Abril Fatface', Times, serif;
 }
 
-/* Highlight active link */
+
 .menu a.active {
   color: #4db6ac;
   border-bottom: 2px solid #4db6ac;
@@ -95,4 +95,5 @@
 
 .menu ul li a:hover {
   color: #4db6ac;
-}
+} 
+

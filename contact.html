@@ -10,7 +10,7 @@
    
 </head>
 <body>
-     <div class="jj">
+     <!-- <div class="jj"> -->
   <input type="checkbox" id="menu-toggle">
   <label for="menu-toggle" class="menu-icon">
     <span class="bar"></span>
@@ -20,7 +20,7 @@
 
   <nav class="menu">
     <ul>
-      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="hotel.html">Hotels</a></li>
       <li><a href="about.html">About Us</a></li>
       <li><a href="gallery.html">Gallery</a></li>
@@ -29,12 +29,26 @@
     </ul>
   </nav>
 </div>
+<script>
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const current = window.location.pathname.split('/').pop();
+    document.querySelectorAll('.menu a').forEach(link => {
+      if (link.getAttribute('href') === current || 
+          (current === '' && link.getAttribute('href') === 'index.html')) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+  });
+</script>
     <header>
 <div class="hero">
       <img src="img2.webp" alt="HEPTA Logo">
 
       <a href="#" class="hepta">Hepta</a>
-      <i class="fa-solid fa-bars"></i>
+
       <h2>Contact</h2>
       <p>Powered by Horizon Labs | Crafted with care</p>
 </div>
